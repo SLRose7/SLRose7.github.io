@@ -1,0 +1,26 @@
+let raceNumber = Math.floor(Math.random() * 1000);
+
+let registeredEarly = true; //This value gets changed/is responsive to interactive user
+
+let age = 16;  //This value gets changed/is responsive to interactive user
+
+if(age > 18 && registeredEarly){
+raceNumber += 1000;}
+
+
+if(age > 18 && registeredEarly){
+console.log(`Race will begin at 9:30am, your race number is ${raceNumber}.`)
+}
+
+else if(age > 18 && !registeredEarly){
+  raceNumber -= 1000;
+  console.log(`Race will begin at 11:00am, your race nmber is ${raceNumber}.`)
+}
+
+else if(age < 18 ){
+  console.log(`Race will begin at 12:30pm, your race nmber is ${raceNumber}.`)
+}
+
+else {
+  console.log(`Please see the registration desk.`)
+}
